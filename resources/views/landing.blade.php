@@ -5,22 +5,21 @@
 @endsection
 
 @section('content')
-    <section>
-        <h2 class="text-center font-merriweather">ENVIOS A TODO CHILE</h1>
+    <section style="margin-top: 100px">
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-3">
-                    <img src="{{asset('img/delivery-ico.png')}}" alt="" style="width: inherit; height: auto; margin-top: -135px;">
-                
+                    <img src="{{asset('img/delivery-icon.png')}}" alt="" style="width: inherit; height: auto; margin-top: -150px;">
                 </div>
                 <div class="col-md-6">
+                    <h2 class="text-center font-merriweather" >ENVIOS A TODO CHILE</h1>
                     <p class="font-merriweather">Realizamos envios a todo chile por pagar en Starken y Chilexpress dias
                         Martes y Viernes. Haz tu compra antes de las 18 hrs del dia anterior para que tu pedido sea agendado y salga al dia siguiente.
                     </p>
                 </div>
-    
+                    
                 <div class="col-md-3">
-                    <img src="{{asset('img/bag-ico.png')}}" alt="" style=" height: auto; margin-top: -30px; margin-left: 55px">
+                    <img src="{{asset('img/bag-icon.png')}}" alt="" style="width: 200px; height: 200px; margin-top: -50px;">
                     
                 </div>
 

@@ -18,7 +18,7 @@
 
     </head>
     
-    <header>
+    <header style="background: url({{asset('img/landing.jpg')}}) no-repeat 50% 50%;" >
         <nav>
         <div class="menu-icon">
             <i class="fa fa-bars fa-2x"></i>
@@ -34,6 +34,7 @@
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Contact</a></li>
+                <li><a href="#signup" data-toggle="modal" data-target=".log-sign">Registro</a></li>
             </ul>
         </div>
         </nav>
@@ -44,6 +45,7 @@
         {{-- CONTENIDO --}}
         @yield('content')
 
+        @include('modals.register-modal')
         
         
         <!-- Optional JavaScript -->
@@ -72,6 +74,33 @@
                     $('nav').removeClass('white');
                 }
             })
+
+            $(window, document, undefined).ready(function() {
+
+            $('.input').blur(function() {
+            var $this = $(this);
+            if ($this.val())
+                $this.addClass('used');
+            else
+                $this.removeClass('used');
+            });
+
+            });
+
+
+            $('#tab1').on('click' , function(){
+            $('#tab1').addClass('login-shadow');
+            $('#tab2').removeClass('signup-shadow');
+            });
+
+            $('#tab2').on('click' , function(){
+            $('#tab2').addClass('signup-shadow');
+            $('#tab1').removeClass('login-shadow');
+
+
+            });
+
+
 
         </script>
 
